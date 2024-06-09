@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: #070724;
+  font-family: "League Spartan", sans-serif;
+
+
+}
+
+nav{
+  font-family: "Antonio", sans-serif;
+}
+
+.circleMercury{
+  border-radius: 50%;
+  background-color: #DEF4FC;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleVenus{
+  border-radius: 50%;
+  background-color: #f7cc7f;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleEarth{
+  border-radius: 50%;
+  background-color: #545bfe;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleMars{
+  border-radius: 50%;
+  background-color: #ff6a45;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleJupiter{
+  border-radius: 50%;
+  background-color: #ecad7a;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleSaturn{
+  border-radius: 50%;
+  background-color: #fccb6b;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleUranus{
+  border-radius: 50%;
+  background-color: #65f0d5;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.circleNeptune{
+  border-radius: 50%;
+  background-color: #497efa;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
