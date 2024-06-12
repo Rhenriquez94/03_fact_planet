@@ -1,7 +1,7 @@
 // Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import data from '../../public/data.json'; // Supongamos que tu JSON está en un archivo data.json
+import data from '../data.json';
 
 function Home() {
   return (

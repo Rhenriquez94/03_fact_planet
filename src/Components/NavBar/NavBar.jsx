@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import flecha from "/img/icon-chevron.svg";
+import './NavBar.css'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white">
+    <nav className="text-white ">
       <div className="flex justify-between h-16 border-b-2 border-gray-500">
         <Link to="/" className="text-2xl font-bold p-4">
           THE PLANETS
@@ -34,7 +35,7 @@ const Navbar = () => {
           </button>
         )}
         {!isMobile && (
-          <ul className="flex flex-row items-center ml-4">
+          <ul className="flex flex-row items-center ml-4 animate">
             {planets.map((planet) => (
               <li key={planet.name} className="m-2 ">
                 <Link
@@ -58,6 +59,7 @@ const Navbar = () => {
             <li key={planet.name} className="m-2">
               <Link
                 to={planet.path}
+               
                 className="flex flex-row text-white no-underline hover:bg-gray-600 p-2 border-b-[1px] border-gray-500 h-[60px]"
                 onClick={toggleMenu}
               >
@@ -65,7 +67,7 @@ const Navbar = () => {
                 <div className="h-auto w-20 text-2xl">
                   <p className="text-left pl-6 md:text-sm ">{planet.name}</p>
                 </div>
-                <div className="ml-[240px] mb-[10px] size-[60px] items-center flex mt-2 md:hidden">
+                <div className="ml-[200px] mb-[10px] size-[60px] items-center flex mt-2 md:hidden">
                   <img src={flecha} alt="flecha" />
                 </div>
               </Link>

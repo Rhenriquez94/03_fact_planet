@@ -1,38 +1,31 @@
-import { useParams } from "react-router-dom"
-import dataPlanets from "../../public/data.json"
+import { useParams } from "react-router-dom";
+import dataPlanets from "../data.json";
+import StructureMobile from "./StructurePlanets/StructureMobile";
 
 const DetailsPlanets = () => {
   const { name } = useParams();
- 
-  // Verificar que name no es undefined
+  
   if (!name) {
-    return <div className="text-white"> Invalid URL: No planet name provided</div>;
+    return <div className="text-white">Invalid URL: No planet name provided</div>;
   }
 
-  // Convertir name a minúsculas para la búsqueda
   const lowerCaseName = name.toLowerCase();
+  const planet = dataPlanets.find(d => d.name.toLowerCase() === lowerCaseName);
 
-  // Buscar el item en el JSON
-  const item = dataPlanets.find(d => d.name.toLowerCase() === lowerCaseName);
-
-  // Manejar caso donde el item no es encontrado
-  if (!item) {
+  if (!planet) {
     return <div>Planet not found</div>;
   }
- 
+
   return (
+    <>
+      <StructureMobile planet={planet} /> {/* Pass planet as prop */}
+      <div className="text-white">
+        <h1>{planet.name}</h1>
+        <p>{planet.structure.content}</p>
+        <img className="size-28" src={planet.images.planet} alt={`${planet.name} image`} />
+      </div>
+    </>
+  );
+};
 
-    <div className="text-white">
-      <h1>{item.name}</h1>
-      <p>{item.structure.content}</p>
-      <img src={item.images.planet} alt="" />
-    </div>
-
-    
-
-
-
-  )
-}
-
-export default DetailsPlanets
+export default DetailsPlanets;

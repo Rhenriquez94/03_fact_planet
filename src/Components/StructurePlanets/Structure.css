@@ -1,0 +1,36 @@
+
+.colorMercury:hover {
+  color: #419EBB; 
+}
+
+.colorVenus:hover {
+  color: #e7c9a9; 
+}
+
+.colorEarth:hover {
+  color: #6f2ed6; 
+}
+
+.colorMars:hover {
+  color: #D14C32;
+}
+
+.colorJupiter:hover {
+  color: #D83A34; 
+}
+
+.colorSaturn:hover {
+  color: #CD5120; 
+}
+
+.colorUranus:hover {
+  color: #1EC1A2; 
+}
+
+.colorNeptune:hover {
+  color: #2D68F0; 
+}
+
+.defaultColor:hover{
+  color: whitesmoke;
+}
