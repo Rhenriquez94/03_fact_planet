@@ -1,56 +1,65 @@
-import React from "react";
-import "./Structure.css";
+import React from 'react';
+import './Structure.css';
 
-const StructureMobile = ({ planet }) => {
+const StructureMobile = ({ planet, selectedSection, setSelectedSection }) => {
   if (!planet) {
     return <div>No planet data</div>;
   }
 
-  let colorClass = "";
+  let colorClass = '';
   switch (planet.name.toLowerCase()) {
-    case "mercury":
-      colorClass = "colorMercury";
+    case 'mercury':
+      colorClass = 'colorMercury';
       break;
-
-    case "venus":
-      colorClass = "colorVenus";
+    case 'venus':
+      colorClass = 'colorVenus';
       break;
-
     case 'earth':
-      colorClass = "colorEarth"
+      colorClass = 'colorEarth';
       break;
-
     case 'mars':
-      colorClass = "colorMars"
+      colorClass = 'colorMars';
       break;
-    
     case 'jupiter':
-      colorClass = "colorJupiter"
+      colorClass = 'colorJupiter';
       break;
-    
     case 'saturn':
-      colorClass = "colorSaturn"
+      colorClass = 'colorSaturn';
       break;
-
     case 'uranus':
-      colorClass = "colorUranus"
+      colorClass = 'colorUranus';
       break;
-
     case 'neptune':
-      colorClass = "colorNeptune"
-      break;  
-
+      colorClass = 'colorNeptune';
+      break;
     default:
-      colorClass = "defaultColor"; // Color por defecto si no hay coincidencia
+      colorClass = 'defaultColor';
       break;
   }
 
   return (
-    <ul>
-      <li className={`${colorClass}`}>OVERVIEW</li>
-      <li className={`${colorClass}`}>STRUCTURE</li>
-      <li className={`${colorClass}`}>SURFACE</li>
-    </ul>
+    <div className=" border-b-2">
+      <ul className="flex justify-evenly h-14 items-center">
+        <li
+          className={`${colorClass}  pt-2`}
+          onClick={() => setSelectedSection('overview')}
+        >
+          OVERVIEW
+        </li>
+        <li
+          className={`${colorClass} pt-2`}
+          onClick={() => setSelectedSection('structure')}
+        >
+          STRUCTURE
+        </li>
+        <li
+          className={`${colorClass} pt-2`}
+          onClick={() => setSelectedSection('surface')}
+        >
+          SURFACE
+        </li>
+      </ul>
+    </div>
   );
 };
 

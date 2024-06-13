@@ -1,36 +1,77 @@
+li{
+  color:white
+}
+
+h1{
+  font-family: "Antonio", sans-serif;;
+}
+
+p{
+  font-family: 'League Spartan';
+  font-size: 14px;
+}
 
 .colorMercury:hover {
-  color: #419EBB; 
+  color: #419EBB;
+  cursor: pointer; 
+  border-bottom: 2px solid #419EBB;
+  
+
+ 
 }
 
 .colorVenus:hover {
   color: #e7c9a9; 
+  cursor: pointer; 
+  border-bottom: 2px solid #e7c9a9;
+
 }
 
 .colorEarth:hover {
-  color: #6f2ed6; 
+  color: #6f2ed6;
+  cursor: pointer;  
+  border-bottom: 2px solid #6f2ed6;
+
 }
 
 .colorMars:hover {
   color: #D14C32;
+  cursor: pointer;
+  border-bottom: 2px solid #D14C32;
+
 }
 
 .colorJupiter:hover {
-  color: #D83A34; 
+  color: #D83A34;
+  cursor: pointer;  
+  border-bottom: 2px solid #D83A34;
+
 }
 
 .colorSaturn:hover {
   color: #CD5120; 
+  cursor: pointer; 
+  border-bottom: 2px solid #CD5120;
+
 }
 
 .colorUranus:hover {
   color: #1EC1A2; 
+  cursor: pointer; 
+  border-bottom: 2px solid #1EC1A2;
+
 }
 
 .colorNeptune:hover {
   color: #2D68F0; 
+  cursor: pointer; 
+  border-bottom: 2px solid #2D68F0;
+
 }
 
 .defaultColor:hover{
   color: whitesmoke;
+  cursor: pointer; 
+  border-bottom: 2px solid whitesmoke;
+
 }

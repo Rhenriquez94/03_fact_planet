@@ -27,7 +27,7 @@ const App = () => {
       <NavBar planets={planets}  />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:name" element={<DetailsPlanets />} />
+        <Route path="/:name/*" element={<DetailsPlanets />} />
       </Routes>
     </Router>
   );
