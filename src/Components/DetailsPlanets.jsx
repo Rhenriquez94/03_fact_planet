@@ -40,22 +40,22 @@ const DetailsPlanets = () => {
        <div className='flex flex-col gap-3'>
           <div className='w-[327px] h-[48px] border border-gray-600 p-4 flex flex-row justify-between' >
             <p>Rotation Time</p>
-            <p>{planet.rotation}</p>
+            <p className='font-Antonio'>{planet.rotation}</p>
           </div>
 
           <div className='w-[327px] h-[48px] border border-gray-600 p-4 flex flex-row justify-between' >
             <p>Revolution Time</p>
-            <p>{planet.revolution}</p>
+            <p className='font-Antonio'>{planet.revolution}</p>
           </div>
 
           <div className='w-[327px] h-[48px] border border-gray-600 p-4 flex flex-row justify-between' >
             <p>Radius</p>
-            <p>{planet.radius}</p>
+            <p className='font-Antonio'>{planet.radius}</p>
           </div>
 
           <div className='w-[327px] h-[48px] border border-gray-600 p-4 flex flex-row justify-between' >
             <p>Average Temp</p>
-            <p>{planet.temperature}</p>
+            <p className='font-Antonio'>{planet.temperature}</p>
           </div>
           
        </div>

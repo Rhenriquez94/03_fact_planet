@@ -7,7 +7,7 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          League_Spartan: ['League Spartan','sans-serif']
+          'Antonio': ['Antonio','sans-serif']
       },
     },
   },
